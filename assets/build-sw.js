@@ -1,6 +1,4 @@
-const builder = require('workbox-build');
-
-builder.injectManifest({
+require('workbox-build').injectManifest({
   swSrc: './www/sw.js',
   swDest: './www/sw.js',
   globDirectory: './www',

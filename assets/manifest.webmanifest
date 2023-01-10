@@ -1,12 +1,11 @@
 {
   "name": "A TiniJS App",
-  "short_name": "Tini App",
+  "short_name": "TiniJS",
   "theme_color": "#f4f5f8",
   "background_color": "#f4f5f8",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
-  "start_url": "../",
   "icons": [
     {
       "src": "../assets/icons/icon-72x72.png",

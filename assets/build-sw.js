@@ -1,7 +1,9 @@
 require('workbox-build').injectManifest({
-  swSrc: './www/sw.js',
-  swDest: './www/sw.js',
-  globDirectory: './www',
+  // DO NOT EDIT THESE FIELDS
+  swSrc: '<out>/sw.js',
+  swDest: '<out>/sw.js',
+  globDirectory: '<out>',
+  // customize the precaching stratergy here
   globPatterns: [
     '**/*.html',
     '**/*.css',

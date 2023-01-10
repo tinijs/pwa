@@ -40,7 +40,6 @@
     "url": "https://github.com/tinijs/pwa/issues"
   },
   "dependencies": {
-    "workbox-build": "^6.5.4",
     "workbox-precaching": "^6.5.4",
     "workbox-window": "^6.5.4"
   },

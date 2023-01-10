@@ -1,3 +1,1 @@
-export const self = {
-  __WB_MANIFEST: [] as string[],
-};
+export const name = '@tinijs/pwa';

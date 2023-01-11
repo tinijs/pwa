@@ -43,6 +43,9 @@
     "workbox-precaching": "^6.5.4",
     "workbox-window": "^6.5.4"
   },
+  "peerDependencies": {
+    "@tinijs/core": "file:../core/tinijs-core-0.0.1.tgz"
+  },
   "devDependencies": {
     "@types/node": "^18.11.18",
     "gts": "^4.0.0",

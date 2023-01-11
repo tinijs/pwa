@@ -1,6 +1,6 @@
 {
   "name": "@tinijs/pwa",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The PWA module for TiniJS apps.",
   "author": "Lam Nhan",
   "homepage": "https://tinijs.lamnhan.com",
@@ -44,7 +44,7 @@
     "workbox-window": "^6.5.4"
   },
   "peerDependencies": {
-    "@tinijs/core": "file:../core/tinijs-core-0.0.1.tgz"
+    "@tinijs/core": "0.0.2"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",

@@ -15,7 +15,7 @@
     "src",
     "!**/*.ts",
     "**/*.d.ts",
-    "assets/sw.ts"
+    "auto-imports.json"
   ],
   "scripts": {
     "compile": "tsc",

@@ -15,18 +15,16 @@ Or, install and setup a complete PWA app via the [@tinijs/cli](https://github.co
 - Install the CLI: `npm i -g @tinijs/cli`
 - Add PWA capability: `tini pwa init`
 
-For more, please visit: <https://tinijs.dev>
+For more, please visit: <https://tinijs.dev> (TODO)
 
 ## Usage
 
 - Expose an API endpoint-ish in `sw.js`
 
 ```js
-const SW_VERSION = '1.0.0';
-
 addEventListener('message', event => {
-  if (event.data.type === 'GET_VERSION') {
-    event.ports[0].postMessage(SW_VERSION);
+  if (event.data.type === 'ENDPOINT_1') {
+    event.ports[0].postMessage({ data: 'a payload' });
   }
 });
 ```
@@ -36,14 +34,16 @@ addEventListener('message', event => {
 ```ts
 import {UseWorkbox, Workbox} from '@tinijs/pwa';
 
-@Page('page-home')
-export class PageHome extends TiniComponent {
+@Page('app-page-home')
+export class AppPageHome extends TiniComponent {
   @UseWorkbox() workbox!: Workbox;
 
   onReady() {
     this.workbox
-      .messageSW({type: 'GET_VERSION'})
-      .then(swVersion => {});
+      .messageSW({type: 'ENDPOINT_1'})
+      .then(value => {
+        // do something with the value returned from the SW
+      });
   }
 }
 ```

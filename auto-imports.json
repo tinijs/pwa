@@ -1,6 +1,0 @@
-{
-  "name": "@tinijs/pwa",
-  "members": [
-    ["decorator", "UseWorkbox"]
-  ]
-}

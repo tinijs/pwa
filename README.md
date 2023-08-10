@@ -32,11 +32,11 @@ addEventListener('message', event => {
 - Communicate with the Service Worker
 
 ```ts
-import {UseWorkbox, Workbox} from '@tinijs/pwa';
+import {GetWorkbox, Workbox} from '@tinijs/pwa';
 
 @Page('app-page-home')
 export class AppPageHome extends TiniComponent {
-  @UseWorkbox() workbox!: Workbox;
+  @GetWorkbox() workbox!: Workbox;
 
   onReady() {
     this.workbox

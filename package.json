@@ -11,10 +11,10 @@
   "main": "src/public-api.js",
   "types": "src/public-api.d.ts",
   "files": [
-    "assets",
     "src",
     "!**/*.ts",
-    "**/*.d.ts"
+    "**/*.d.ts",
+    "assets"
   ],
   "scripts": {
     "build": "tsc",

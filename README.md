@@ -34,7 +34,9 @@ addEventListener('message', event => {
 ```ts
 import {GetWorkbox, Workbox} from '@tinijs/pwa';
 
-@Page('app-page-home')
+@Page({
+  name: 'app-page-home',
+})
 export class AppPageHome extends TiniComponent {
   @GetWorkbox() workbox!: Workbox;
 

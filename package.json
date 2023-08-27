@@ -36,12 +36,12 @@
   "bugs": {
     "url": "https://github.com/tinijs/pwa/issues"
   },
+  "peerDependencies": {
+    "@tinijs/core": "file:../core/tinijs-core-0.6.0.tgz"
+  },
   "dependencies": {
     "workbox-precaching": "^7.0.0",
     "workbox-window": "^7.0.0"
-  },
-  "peerDependencies": {
-    "@tinijs/core": "^0.6.0"
   },
   "devDependencies": {
     "@types/node": "^20.4.8",

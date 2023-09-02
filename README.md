@@ -6,7 +6,7 @@ It uses [workbox-window](https://developer.chrome.com/docs/workbox/using-workbox
 
 ## Install
 
-To manually install the module: `npm i @tinijs/core`
+To manually install the module: `npm i @tinijs/pwa`
 
 It is recommended to download the [Skeleton](https://github.com/tinijs/skeleton) for a ready-to-use structured project.
 

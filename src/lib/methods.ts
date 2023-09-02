@@ -1,11 +1,10 @@
 import {Workbox} from 'workbox-window';
-import {getAppInstance, TiniApp, Global} from '@tinijs/core';
+import {getAppInstance} from '@tinijs/core';
 
-export function getWorkbox(): null | Workbox {
-  const appOrGlobal = getAppInstance(true);
-  return (
-    (appOrGlobal as TiniApp).$workbox ||
-    (appOrGlobal as Global).$tiniWorkbox ||
-    null
-  );
+import {NO_PWA_ERROR} from './consts';
+
+export function getWorkbox() {
+  const workbox = getAppInstance().workbox as undefined | Workbox;
+  if (!workbox) throw new Error(NO_PWA_ERROR);
+  return workbox;
 }

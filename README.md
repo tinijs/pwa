@@ -23,7 +23,7 @@ For more, please visit: <https://tinijs.dev> (TODO)
 
 ```js
 addEventListener('message', event => {
-  if (event.data.type === 'ENDPOINT_1') {
+  if (event.data.type === 'endpoint-1') {
     event.ports[0].postMessage({ data: 'a payload' });
   }
 });
@@ -32,17 +32,17 @@ addEventListener('message', event => {
 - Communicate with the Service Worker
 
 ```ts
-import {GetWorkbox, Workbox} from '@tinijs/pwa';
+import {UseWorkbox, Workbox} from '@tinijs/pwa';
 
 @Page({
   name: 'app-page-home',
 })
 export class AppPageHome extends TiniComponent {
-  @GetWorkbox() workbox!: Workbox;
+  @UseWorkbox() workbox!: Workbox;
 
   onReady() {
     this.workbox
-      .messageSW({type: 'ENDPOINT_1'})
+      .messageSW({type: 'endpoint-1'})
       .then(value => {
         // do something with the value returned from the SW
       });

@@ -1,11 +1,9 @@
 import {getWorkbox} from './methods';
 
-export function GetWorkbox() {
-  return function (target: Object, propertyKey: string) {
-    Reflect.defineProperty(target, propertyKey, {
+export function UseWorkbox() {
+  return function (prototype: any, propertyKey: string) {
+    Object.defineProperty(prototype, propertyKey, {
       get: () => getWorkbox(),
-      enumerable: false,
-      configurable: false,
     });
   };
 }

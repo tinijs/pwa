@@ -5,16 +5,23 @@
   "author": "Lam Nhan",
   "homepage": "https://tinijs.dev",
   "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "publishConfig": {
     "access": "public"
   },
-  "main": "src/public-api.js",
-  "types": "src/public-api.d.ts",
+  "exports": "./public-api.js",
+  "types": "./public-api.d.ts",
   "files": [
-    "src",
+    "lib",
+    "module",
+    "public-api.*",
     "!**/*.ts",
     "**/*.d.ts",
-    "assets"
+    "assets",
+    "!test"
   ],
   "scripts": {
     "build": "tsc",
@@ -37,9 +44,11 @@
     "url": "https://github.com/tinijs/pwa/issues"
   },
   "peerDependencies": {
-    "@tinijs/core": "^0.16.0"
+    "@tinijs/cli": "file:../cli/tinijs-cli-0.16.0.tgz",
+    "@tinijs/core": "file:../core/tinijs-core-0.16.0.tgz"
   },
   "dependencies": {
+    "pathe": "^1.1.2",
     "workbox-precaching": "^7.0.0",
     "workbox-window": "^7.0.0"
   },

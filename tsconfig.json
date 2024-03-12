@@ -1,13 +1,16 @@
 {
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "NodeNext",
+    "target": "ESNext",
     "lib": ["DOM", "ESNext"],
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "skipLibCheck": true
   },
   "include": [
-    "src/**/*.ts",
-    "test/**/*.ts"
+    "**/*.ts"
+  ],
+  "exclude": [
+    "assets"
   ]
 }

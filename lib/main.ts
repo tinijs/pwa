@@ -1,6 +1,6 @@
 import {Workbox} from 'workbox-window';
 
-import {TINI_APP_CONTEXT, SW_UNSUPPORTED_ERROR} from './consts';
+import {TINI_APP_CONTEXT, SW_UNSUPPORTED_ERROR} from './consts.js';
 
 export function registerServiceWorker(swPath?: string) {
   if (!('serviceWorker' in navigator)) throw new Error(SW_UNSUPPORTED_ERROR);

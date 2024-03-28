@@ -1,21 +1,26 @@
 # TiniJS PWA
 
+> [!IMPORTANT]
+> This previously experiment is wrapped up, moving forward the development will happen at <https://github.com/tinijs/tinijs/tree/main/packages/pwa>.
+>
+> If you want to use the experimental version still, please use the version `0.16.0`.
+
 The PWA module for TiniJS apps.
 
 It uses [workbox-window](https://developer.chrome.com/docs/workbox/using-workbox-window/) under the hood.
 
 ## Install
 
-To manually install the module: `npm i @tinijs/pwa`
+To manually install the module: `npm i @tinijs/pwa@0.16.0`
 
 It is recommended to download the [Skeleton](https://github.com/tinijs/skeleton) for a ready-to-use structured project.
 
 Or, install and setup a complete PWA app via the [@tinijs/cli](https://github.com/tinijs/cli) CLI tool:
 
-- Install the CLI: `npm i -g @tinijs/cli`
-- Add PWA capability: `tini pwa init`
+- Install the CLI: `npm i @tinijs/cli@0.16.0`
+- Add PWA capability: `npx tini pwa init`
 
-For more, please visit: <https://tinijs.dev> (TODO)
+For more, please visit: <https://tinijs.dev>
 
 ## Usage
 

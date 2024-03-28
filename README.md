@@ -1,5 +1,8 @@
 # TiniJS PWA
 
+> [!IMPORTANT]
+> This previously experiment is wrapped up, moving forward the development will happen at <https://github.com/tinijs/tinijs/tree/main/packages/pwa>.
+
 The PWA module for TiniJS apps.
 
 It uses [workbox-window](https://developer.chrome.com/docs/workbox/using-workbox-window/) under the hood.
